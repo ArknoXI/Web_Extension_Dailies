@@ -38,16 +38,18 @@ const urls = {
 //###############################################################################################
 // Function init
 //###############################################################################################
-let count = -1;
+
+let count;
 document.addEventListener("DOMContentLoaded", function(){
     chrome.storage.local.get(["counter"], function(result){
         count = result.counter;
-        console.log(count);
+        if (count == undefined){
+            count = -1;
+        }
         let title = setTitle();
         changeGameTitle(title);
     })
 });
-console.log(count);
 
 //###############################################################################################
 // Function Dictionary
