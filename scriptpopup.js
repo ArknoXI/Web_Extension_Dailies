@@ -146,4 +146,20 @@ document.getElementById("close").addEventListener("click", function(){
     close();
 })
 
+document.addEventListener("keydown", (event) => {
+    if (event.key === "9"){
+        plus();
+    }
+});
 
+document.addEventListener("keydown", (event) => {
+    if (event.key === "8"){
+        minus();
+    }
+});
+
+document.addEventListener("keydown", (event) => {
+    if (event.key === "7"){
+        close();
+    }
+});

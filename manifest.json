@@ -8,6 +8,15 @@
         "service_worker": "background.js"
     },
 
+    "commands": {
+        "abrir": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+B"
+            },
+            "description": "Abre a janela de popup"
+        }
+    },
+
     "action": {
         "default_popup": "popup.html"
     },
